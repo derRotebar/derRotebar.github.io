@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<!--Detta är ju indexsidan och drämed bas sidan, alla andra fungerar på samma bas men kommer t.ex se till att kurser har länkar till kursplanner osv-->
+
+    <link rel="stylesheet" href="index.css"> 
+    <div class="container">
+        <header>
+          <!--en simpel headbar med länkar till de olika sidorna-->
+        <div class="header-bar"> 
+        <p class="header-item" id="link" onclick="location.href ='index.html';"  >Hem</p>
+        <p class="header-item" id="link" onclick="location.href ='about.html';"  >Om mig</p>
+        <p class="header-item" id="link" onclick="location.href ='intressen.html';"  >Intressen</p>
+        <p class="header-item" id="link" onclick="location.href ='kurser.html';"  >Kurser</p>
+        <p class="header-item" id="link" onclick="location.href ='arbete.html';"  >Tidigare arbete</p>
+          </div>
+        </header>
+        <head>
+          <h1>Hem</h1>
+        </head>
+        <!--fyller i bodyn med text i framtiden-->
+        <body>
+            <img class="selfie" src="IMG_0582 - kopia.JPG"/>
+            <div class="grid">
+              <p class="grid-item">Hajsan, jag hetar Arvid Börgeson. Just nu studerar jag programutveckling på SvenEriksons-gymmnasiet</p>
+           
+            </div>
+        </body>
+       
+    
+    <footer>
+      <!--fotterna är just footern och innehåller information om sidan-->
+          <div>
+            <p>email: </p>
+            <button class="copy" data-copy="Arvid.Borgeson@me.com">Arvid.Borgeson@me.com</button>
+            <a id="emailLink" href="#" style="display: none;">skicka Email</a>
+            <p>tel number: </p>
+            <button class="copy" data-copy="0706613800">0706613800</button>
+            <p>senast uppdaterad:</p>
+            <p id="uppdaterad"></p>
+            <p>webbansvarig:</p>
+            <p>Arvid Börgeson</p>
+            </div>
+           
+                
+        </footer>
+      </div>
+    
+      <script src="index.js"></script>
+
+</html>
