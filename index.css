@@ -62,6 +62,14 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
+.selfie_small{
+  display: block;
+  max-width: 30%;
+  height: auto;
+  border-radius: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .gym,
 .spel,
@@ -102,7 +110,7 @@ p {
   font-size: 150%;
 }
 
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.5rem;
@@ -127,7 +135,10 @@ p {
   }
 
   .selfie {
-    max-width: 60%;
+    max-width: 35%;
+  }
+  .selfie_small{
+   max-width: 25%;  
   }
 }
 
@@ -156,7 +167,10 @@ p {
   }
 
   .selfie {
-    max-width: 80%;
+    max-width: 30%;
+  }
+  .selfie_small{
+    max-width: 25%;
   }
 
   h1,
@@ -167,5 +181,36 @@ p {
 
   p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-item {
+    flex: 1 1 100px;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  .selfie {
+    max-width: 25%;
+  }
+  .selfie_small{
+    max-width: 30%;
   }
 }
